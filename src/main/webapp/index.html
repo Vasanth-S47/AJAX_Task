@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h2> Ticket Booking</h2>
+
+
+    <div id="availability">
+        <h3>Available Seats: <span id="ticketCount">Loading...</span></h3>
+        <h3>Booked Seats : <span id="userTickets">0</span></h3>
+        <h3>Total Price: ₹<span id="totalPrice">0</span></h3>
+    </div>
+
+
+    <input type="number" id="ticketQty" placeholder="Enter Ticket Quantity">
+    <button id="bookBtn">Book Ticket</button>
+    <button id="cancelBtn" disabled>Cancel Ticket</button>
+
+    <div id="result"></div>
+</div>
+
+<script src="ticketManager.js"></script>
+</body>
+</html>
